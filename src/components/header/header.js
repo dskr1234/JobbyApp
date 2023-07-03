@@ -6,7 +6,7 @@ import {MdHome, MdWork} from 'react-icons/md'
 
 import {FiLogOut} from 'react-icons/fi'
 
-import './index.css'
+import './header.css'
 
 const Header = props => {
   const removeAccess = () => {
