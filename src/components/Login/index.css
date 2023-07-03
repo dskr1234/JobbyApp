@@ -1,75 +1,80 @@
-.login-container {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  background-size: cover;
+.main-login-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  font-family: 'Roboto';
+  background-color: #121212;
 }
-.login-card {
-  width: 35%;
-  border-radius: 5px;
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 450px;
+  height: 420px;
   background-color: #272727;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+  border-radius: 5px;
+  padding: 40px;
 }
-.logo {
-  background-color: transparent;
-  height: 50px;
-  width: 200px;
-}
-.image-container {
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-.form-container {
+
+.login-form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 80px;
+  width: 100%;
 }
-.input-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+
+.website-logo {
+  width: 150px;
+  align-self: center;
 }
+
 .label {
-  color: #f8fafc;
-  font-family: 'Roboto';
-  font-size: 12px;
-  padding-left: 56px;
-  padding-bottom: 10px;
+  color: #ffffff;
+  font-size: 13px;
 }
-.input-box {
+
+.input-element {
+  width: 100%;
   height: 35px;
-  width: 80%;
-  margin-left: 56px;
-  border-radius: 5px;
+  padding: 10px;
+  border-style: solid;
+  border-color: #b6c5ff;
   background-color: transparent;
-  border: 1px solid #cbd5e1;
+  border-width: 1px;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-top: 10px;
   margin-bottom: 20px;
-  color: #f8fafc;
-  padding-left: 20px;
+  color: white;
 }
-.button-container {
-  text-align: center;
-  margin-bottom: 30px;
-}
+
 .login-button {
-  height: 35px;
-  width: 80%;
-  background-color: #4f46e5;
-  border-radius: 5px;
-  border: 0px;
-  color: #f8fafc;
-  font-family: 'Roboto';
-  cursor: pointer;
+  width: 100%;
+  background-color: #6366f1;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  height: 40px;
+  border-style: none;
+  outline: none;
+  border-radius: 8px;
+  margin-top: 10px;
 }
-.error-msg {
+
+.error-display {
   color: #ff0b37;
-  text-align: left;
-  padding-left: 50px;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 576px) {
+  .login-container {
+    width: 320px;
+    height: 400px;
+  }
 }
